@@ -1,6 +1,6 @@
 class Shoe
     attr_accessor :color, :size, :material, :condition
-    attr_reader :brand, :cobble
+    attr_reader :brand
     def initialize(brand)
         @brand = brand
     end
@@ -41,9 +41,9 @@ class Shoe
     #     @condition
     # end
 
-    # def cobble
-    #     puts "Your shoe is as good as new!"
-    #     self.condition=("new")
-    # end
+    def cobble
+        puts "Your shoe is as good as new!"
+        self.condition=("new")
+    end
 
 end
